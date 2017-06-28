@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/aliwx_common_title_style">
+
+    <ImageView
+        android:id="@+id/chat_back"
+        style="@style/aliwx_common_title_left_btn_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/aliwx_common_back_btn_bg" />
+
+    <TextView
+        android:id="@+id/aliwx_title_btn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="7dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp"
+        android:text="清空"
+        android:textColor="#5f646e" />
+
+
+    <TextView
+        android:id="@+id/chat_title"
+        style="@style/aliwx_common_title_text_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxWidth="200dp"
+        android:paddingLeft="0dip"
+        android:paddingRight="0dip"
+        android:text="红包消息"
+        android:textColor="#212c33"
+        android:textSize="@dimen/aliwx_common_17_size" />
+</RelativeLayout>

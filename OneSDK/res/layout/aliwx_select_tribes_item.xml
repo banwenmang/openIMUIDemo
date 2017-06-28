@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/aliwx_friend_item_height"
+    android:background="@drawable/aliwx_friend_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/aliwx_column_up_unit_margin">
+
+    <CheckBox
+        android:id="@+id/tribe_select_box"
+        android:layout_width="@dimen/aliwx_common_checkbox_size"
+        android:layout_height="@dimen/aliwx_common_checkbox_size"
+        android:button="@drawable/aliwx_common_check_bg"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.alibaba.mobileim.fundamental.widget.WXNetworkImageView
+            android:id="@+id/tribe_head"
+            style="@style/aliwx_common_head_style"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/type_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tribe_head"
+            android:layout_alignRight="@id/tribe_head"
+            android:src="@drawable/aliwx_tribe_mute"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tribe_name"
+        style="@style/aliwx_common_first_text_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

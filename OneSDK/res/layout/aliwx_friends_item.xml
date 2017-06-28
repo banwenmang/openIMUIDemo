@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/aliwx_common_bg_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/aliwx_friend_alpha_height"
+        android:background="@color/aliwx_common_bg_color"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/aliwx_column_up_unit_margin"
+        android:textColor="@color/aliwx_third_text_color"
+        android:textSize="@dimen/aliwx_second_text_size" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/aliwx_friend_item_height"
+        android:background="@drawable/aliwx_friend_item_bg"
+        android:padding="10dp"
+        >
+
+        <CheckBox
+            android:id="@+id/select_box"
+            android:layout_width="@dimen/aliwx_common_checkbox_size"
+            android:layout_height="@dimen/aliwx_common_checkbox_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/aliwx_common_check_bg"
+            android:clickable="false"
+            android:visibility="gone"
+            android:focusable="false"
+            android:layout_marginRight="@dimen/aliwx_column_up_unit_margin"
+            android:layout_marginLeft="@dimen/aliwx_column_up_unit_margin"
+            android:focusableInTouchMode="false"
+            android:gravity="center" />
+
+        <com.alibaba.mobileim.fundamental.widget.roundedimage.RoundedImageView
+            android:id="@+id/head"
+            style="@style/aliwx_common_head_style"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/select_box"
+            android:layout_marginLeft="0dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/aliwx_common_first_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/aliwx_common_two_safe_margin"
+            android:layout_toRightOf="@+id/head"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/selfDesc"
+            style="@style/aliwx_common_second_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dip"
+            android:layout_marginRight="@dimen/aliwx_column_up_unit_margin"
+            android:layout_toRightOf="@id/head" />
+
+        <TextView
+            android:id="@+id/select_name"
+            style="@style/aliwx_common_first_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head"
+            android:layout_alignTop="@id/head"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/aliwx_column_up_unit_margin"
+            android:layout_toRightOf="@id/head"
+            android:ellipsize="end" />
+    </RelativeLayout>
+
+</LinearLayout>

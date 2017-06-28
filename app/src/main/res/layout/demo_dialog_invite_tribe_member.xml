@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_safe_margin"
+        android:paddingRight="@dimen/common_safe_margin">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="userId："/>
+
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="testpro11"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_safe_margin"
+        android:paddingRight="@dimen/common_safe_margin">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="appKey："/>
+
+        <EditText
+            android:id="@+id/appkey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="23015524"/>
+
+    </LinearLayout>
+
+</LinearLayout>

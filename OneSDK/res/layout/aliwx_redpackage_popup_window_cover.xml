@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/redpackage_window_whole_cover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:alpha="0.6"
+    android:background="@color/aliwx_black"
+    android:clickable="true"
+    android:visibility="gone"
+     />

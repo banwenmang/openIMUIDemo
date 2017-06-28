@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_friend_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/aliwx_common_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/ls_common_title" />
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_below="@id/title"
+        android:layout_margin="10dp"
+        android:background="@drawable/aliwx_select_friend_search_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/aliwx_search_icon" />
+
+        <TextView
+            android:id="@+id/search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text="@string/aliwx_search"
+            android:textColor="#D0CDD2"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tab_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/search_layout"
+        android:background="@color/aliwx_wx_line_color" />
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:id="@+id/select_tab_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_line"
+        android:background="@color/aliwx_white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/recent_button_layout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/recent_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/aliwx_white"
+                android:gravity="center"
+                android:text="@string/aliwx_recent_friends"
+                android:textColor="@color/aliwx_ls_common_blue"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/recent_button_line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/recent_button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/recent_button"
+                android:background="@color/aliwx_ls_common_blue" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/wx_friends_button_layout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/wx_friends_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/aliwx_white"
+                android:gravity="center"
+                android:text="@string/aliwx_wangwang_friends"
+                android:textColor="@color/aliwx_third_text_color"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/wx_friends_button_line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/wx_friends_button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/wx_friends_button"
+                android:background="@color/aliwx_ls_common_blue"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tribe_button_layout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tribe_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/aliwx_white"
+                android:gravity="center"
+                android:text="@string/tribe"
+                android:textColor="@color/aliwx_third_text_color"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/tribe_button_line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tribe_button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/tribe_button"
+                android:background="@color/aliwx_ls_common_blue"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_below_select_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/select_tab_layout"
+        android:background="#dddddd"></View>
+
+    <ListView
+        android:id="@+id/select_contacts_listview"
+        style="@style/aliwx_dividedListStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/switcherLayout"
+        android:layout_below="@id/line_below_select_tab_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/aliwx_wx_column_bg_color_pressed"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone"></ListView>
+
+    <ListView
+        android:id="@+id/select_tribes_list"
+        style="@style/aliwx_dividedListStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/switcherLayout"
+        android:layout_below="@id/line_below_select_tab_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/recent_listview"
+        style="@style/aliwx_dividedListStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/switcherLayout"
+        android:layout_below="@id/line_below_select_tab_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:visibility="gone"></ListView>
+
+    <ListView
+        android:id="@+id/tribe_member_listview"
+        style="@style/aliwx_dividedListStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/switcherLayout"
+        android:layout_below="@id/tab_line"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:visibility="gone"></ListView>
+
+
+    <LinearLayout
+        android:id="@+id/fail_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fail_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/aliwx_emptystate_fail_image" />
+
+        <TextView
+            android:id="@+id/fail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="加载失败，请重试"
+            android:textColor="@color/aliwx_select_fail_hint_color"
+            android:textSize="@dimen/aliwx_common_text_size" />
+
+        <TextView
+            android:id="@+id/fail_bt"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/aliwx_refresh"
+            android:background="@drawable/aliwx_ls_fail_empty_refresh_bg"
+            android:textColor="@color/aliwx_select_fail_hint_color"
+            android:textSize="@dimen/aliwx_common_text_size" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/switcherLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/aliwx_wxtribe_title_color"
+        android:paddingRight="@dimen/aliwx_column_up_unit_margin"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/aliwx_friend_select_btn_width"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/aliwx_column_up_unit_margin"
+            android:background="@drawable/aliwx_common_blue_btn_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/aliwx_start"
+            android:textColor="@drawable/aliwx_btn_text_color"
+            android:textSize="14sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/start"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dip"
+            android:gravity="center_vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/aliwx_column_up_unit_margin"></LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_contacts_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/aliwx_halftransparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/aliwx_search_text"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp" />
+
+        <ListView
+            android:id="@+id/search_contacts_listview"
+            style="@style/aliwx_dividedListStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

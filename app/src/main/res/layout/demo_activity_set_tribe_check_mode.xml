@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/aliwx_common_simple_title" />
+
+    <View
+        android:id="@+id/start_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/common_safe_margin"
+        android:background="@color/common_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/no_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_below="@id/start_line">
+
+        <TextView
+            style="@style/more_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_safe_margin"
+            android:text="@string/no_verification" />
+
+        <ImageView
+            android:id="@+id/no_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_safe_margin"
+            android:src="@drawable/icon_checkmark" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/no_verification_layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/no_verification_layout"
+        android:background="@color/common_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/pwd_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_below="@id/no_verification_layout_divider">
+
+        <TextView
+            style="@style/more_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_safe_margin"
+            android:text="@string/pwd_verification" />
+
+        <ImageView
+            android:id="@+id/pwd_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_safe_margin"
+            android:src="@drawable/icon_checkmark" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/pwd_verification_layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pwd_verification_layout"
+        android:background="@color/common_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/id_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_below="@id/pwd_verification_layout_divider">
+
+        <TextView
+            style="@style/more_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_safe_margin"
+            android:text="@string/id_verification" />
+
+        <ImageView
+            android:id="@+id/id_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_safe_margin"
+            android:src="@drawable/icon_checkmark" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/id_verification_layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/id_verification_layout"
+        android:background="@color/common_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/nobody_join_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_below="@id/id_verification_layout_divider">
+
+        <TextView
+            style="@style/more_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_safe_margin"
+            android:text="@string/nobody_join" />
+
+        <ImageView
+            android:id="@+id/nobody_join"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_safe_margin"
+            android:src="@drawable/icon_checkmark" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/end_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/nobody_join_layout"
+        android:background="@color/common_line_color" />
+
+</RelativeLayout>

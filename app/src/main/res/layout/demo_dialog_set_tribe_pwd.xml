@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/common_safe_margin"
+        android:text="@string/set_tribe_pwd"
+        android:textColor="@color/black"
+        android:textSize="@dimen/aliwx_font_top_grade" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/common_two_safe_margin"
+        android:paddingRight="@dimen/common_two_safe_margin"
+        android:text="@string/set_tribe_pwd_desc"
+        android:textColor="@color/common_text_color2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_margin="@dimen/common_safe_margin">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="@string/input_tribe_pwd"
+            android:paddingLeft="@dimen/common_safe_margin"
+            android:password="true"/>
+
+        <ImageView
+            android:id="@+id/clear_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/common_safe_margin"
+            android:paddingRight="@dimen/common_safe_margin"
+            android:src="@drawable/aliwx_reply_bar_close_normal"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/aliwx_text_color_blue" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_line_color" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/aliwx_text_color_blue" />
+    </LinearLayout>
+
+
+</LinearLayout>

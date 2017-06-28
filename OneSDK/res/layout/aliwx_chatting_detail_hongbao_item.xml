@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="16dp"
+    android:orientation="horizontal"
+              xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <TextView
+        android:id="@+id/hongbao_receive_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="7dp"
+        android:background="@drawable/aliwx_hongbao_chat_msg_bg"
+        android:gravity="left"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:includeFontPadding="false"
+        android:maxWidth="256dp"
+        android:paddingRight="12dp"
+        android:ellipsize="middle"
+        android:maxLines="2"
+        android:textColor="@color/aliwx_white"
+        tools:text="fzxcvasdfasdf领取了你的红包asdfasdfasdfasdfasdf" />
+
+
+</LinearLayout>

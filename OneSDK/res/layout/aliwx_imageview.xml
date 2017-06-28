@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="35dp"
+    android:layout_height="35dp">
+
+    <com.alibaba.mobileim.fundamental.widget.WXNetworkImageView
+        android:id="@+id/circle_image"
+        android:layout_width="@dimen/aliwx_common_head_size"
+        android:layout_height="@dimen/aliwx_common_head_size"
+        android:scaleType="fitXY"
+        />
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/aliwx_icon_cross"
+        />
+</RelativeLayout>

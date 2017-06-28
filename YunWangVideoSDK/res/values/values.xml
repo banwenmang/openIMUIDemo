@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="imrecorder_alphayellow">#7fffda44</color>
+    <color name="imrecorder_filter_theme_selected_bg">#1A92ED</color>
+    <color name="imrecorder_init_color">#1A92ED</color>
+    <color name="imrecorder_pause_color">#1A92ED</color>
+    <color name="imrecorder_pause_outside_color">#1A92ED</color>
+    <color name="imrecorder_remove_clip">#F33D33</color>
+    <color name="imrecorder_timeline_bg">#666666</color>
+    <color name="imrecorder_timeline_point">#F3F3F3</color>
+    <color name="imrecorder_timeline_start_color">#1A92ED</color>
+    <color name="imrecorder_timepoint_color">#331A92ED</color>
+    <color name="imrecorder_yellowpressed">#998326</color>
+    <color name="imstrecorder_alphayellow">#7fffda44</color>
+    <color name="imstrecorder_common_bg_white_color">#f9f9f9</color>
+    <color name="imstrecorder_common_dialog_white_bg">#f9f9f9</color>
+    <color name="imstrecorder_common_line_color">#cccccc</color>
+    <color name="imstrecorder_filter_theme_selected_bg">#EE4D2F</color>
+    <color name="imstrecorder_init_color">#EE4D2F</color>
+    <color name="imstrecorder_pause_color">#EE4D2F</color>
+    <color name="imstrecorder_pause_outside_color">#EE4D2F</color>
+    <color name="imstrecorder_remove_clip">#F33D33</color>
+    <color name="imstrecorder_timeline_bg">#666666</color>
+    <color name="imstrecorder_timeline_point">#F3F3F3</color>
+    <color name="imstrecorder_timeline_start_color">#EE4D2F</color>
+    <color name="imstrecorder_timepoint_color">#33EE4D2F</color>
+    <color name="imstrecorder_yellowpressed">#998326</color>
+    <color name="taorecorder_alphayellow">#7fffda44</color>
+    <color name="taorecorder_filter_theme_selected_bg">#fe5000</color>
+    <color name="taorecorder_init_color">#ff5000</color>
+    <color name="taorecorder_pause_color">#1beb25</color>
+    <color name="taorecorder_pause_outside_color">#1c8624</color>
+    <color name="taorecorder_timeline_bg">#666666</color>
+    <color name="taorecorder_timeline_start_color">#1beb25</color>
+    <color name="taorecorder_yellowpressed">#998326</color>
+    <string name="imrecorder_dlg_record_quit_message">确定要放弃这段视频吗？</string>
+    <string name="imrecorder_mintimeshow_message">至少录到这里哦</string>
+    <string name="taorecorder_app_name">短视频录制</string>
+    <string name="taorecorder_audio_permission_deny">麦克风权限被禁止,可以在应用设置中进行修改</string>
+    <string name="taorecorder_back_to_topic">回话题</string>
+    <string name="taorecorder_camera_permission_deny">拍摄视频需要用到摄像头权限,打开摄像头失败，请到设置中打开权限</string>
+    <string name="taorecorder_delete">回删</string>
+    <string name="taorecorder_dlg_record_quit_cancel">取消</string>
+    <string name="taorecorder_dlg_record_quit_confirm">确定</string>
+    <string name="taorecorder_dlg_record_quit_message">确定放弃录制视频？</string>
+    <string name="taorecorder_doing">处理中…</string>
+    <string name="taorecorder_neterror">亲，您的网络状况不太好哦</string>
+    <string name="taorecorder_no_network">抱歉主人，您当前没有网络连接，无法上传视频</string>
+    <string name="taorecorder_no_wifi">主人，您当前未连接wifi，上传会使用较多流量哦</string>
+    <string name="taorecorder_nosdcard">您的SDCard不可用，请插SDCard后重试</string>
+    <string name="taorecorder_notsupport">您的手机暂时不支持短视频录制</string>
+    <string name="taorecorder_ok">确定</string>
+    <string name="taorecorder_opencameraerror">打开摄像头失败</string>
+    <string name="taorecorder_play">视频预览</string>
+    <string name="taorecorder_playurl">视频预览Url</string>
+    <string name="taorecorder_playurlTextureView">视频预览Url_TextureView</string>
+    <string name="taorecorder_preview">预览</string>
+    <string name="taorecorder_previewtitle">预览视频</string>
+    <string name="taorecorder_pub_reach_limit">输入字数已达上限140字</string>
+    <string name="taorecorder_record_fail">录制失败!</string>
+    <string name="taorecorder_recordtime">0.0 秒</string>
+    <string name="taorecorder_recordvideo0">9s短视频录制保存Q1</string>
+    <string name="taorecorder_recordvideo1">9s短视频录制保存Q0</string>
+    <string name="taorecorder_recordvideo2">60s长视频录制保存</string>
+    <string name="taorecorder_reocordtitle">录制视频</string>
+    <string name="taorecorder_resethint">重置提示</string>
+    <string name="taorecorder_save">保存</string>
+    <string name="taorecorder_saving">保存中…</string>
+    <string name="taorecorder_share">分享</string>
+    <string name="taorecorder_upload">上传</string>
+    <string name="taorecorder_upload_try_again">再试一次</string>
+    <string name="taorecorder_uploaderror">上传失败</string>
+    <string name="taorecorder_uploading">上传中…</string>
+    <string name="taorecorder_video_cancel_upload">取消上传</string>
+    <string name="taorecorder_video_filter_huaijiu">文艺</string>
+    <string name="taorecorder_video_filter_jiaopian">胶片</string>
+    <string name="taorecorder_video_filter_lomo">LOMO</string>
+    <string name="taorecorder_video_filter_original">原图</string>
+    <string name="taorecorder_video_filter_processing">视频生成中…</string>
+    <string name="taorecorder_video_filter_richu">柔光</string>
+    <string name="taorecorder_video_filter_xuanli">胶片</string>
+    <string name="taorecorder_video_filter_yazhi">雅致</string>
+    <string name="taorecorder_video_filter_youmei">复古</string>
+    <string name="taorecorder_video_format_limit">请选择mp4文件进行上传</string>
+    <string name="taorecorder_video_publish_failed">视频发布失败</string>
+    <string name="taorecorder_video_publish_success">视频上传成功</string>
+    <string name="taorecorder_video_size_limit">视频大小超出限制，请选择小一点的视频</string>
+    <string name="taorecorder_video_time_limit">视频长度超过60秒，请选择不超过60秒的视频</string>
+    <string name="taorecorder_video_upload_failed">抱歉主人，视频上传失败了</string>
+    <string name="taorecorder_video_uploading">视频正在上传... %1$s</string>
+    <string name="taorecorder_videoerror">视频异常，请重新录制 !</string>
+    <string name="taorecorder_write_sdcard_permission_deny">存储权限被禁止,可以在应用设置中进行修改</string>
+    <style name="Aliwx_DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+    </style>
+    <style name="RecordThemeStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">2dip</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:layout_marginLeft">10dip</item>
+    </style>
+    <style name="aliwx_My_Theme_Dialog_Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowTitleStyle">@style/Aliwx_DialogWindowTitle</item>
+    </style>
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:background">@android:color/transparent</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

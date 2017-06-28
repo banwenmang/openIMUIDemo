@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aliwx_wx_column_bg">
+    <View
+        android:id="@+id/extra_space"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/aliwx_common_bg_color"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/extra_space"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/head"
+            style="@style/aliwx_common_head_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/aliwx_common_first_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/aliwx_common_unit_margin"
+            android:layout_marginTop="@dimen/aliwx_common_unit_margin"
+            android:layout_toRightOf="@+id/head"
+            android:ellipsize="middle"
+            />
+        <TextView
+            android:id="@+id/select_name"
+            style="@style/aliwx_common_first_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head"
+            android:layout_alignTop="@id/head"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/aliwx_common_unit_margin"
+            android:layout_toRightOf="@id/head"
+            android:ellipsize="middle"
+            />
+    </RelativeLayout>
+</RelativeLayout>

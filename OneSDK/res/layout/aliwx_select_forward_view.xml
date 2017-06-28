@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="17.5dp"
+    android:layout_marginTop="17.5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aliwx_forward_to"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <com.alibaba.mobileim.fundamental.widget.WXNetworkImageView
+        android:id="@+id/select_forward_head"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:scaleType="center" />
+    
+    <TextView
+        android:id="@+id/select_forward_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+</LinearLayout>

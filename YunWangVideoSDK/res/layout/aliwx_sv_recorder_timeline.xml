@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/record_timeline"
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:layout_weight="1"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:id="@+id/timeline_underlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/taorecorder_timeline_bg"
+        android:orientation="horizontal"
+        android:weightSum="9000" >
+
+        <View
+            android:id="@+id/min_capture_duration_spacer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3000" />
+
+        <ImageView
+            android:id="@+id/min_capture_duration_point"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@color/imrecorder_timeline_start_color" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/clip_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_timepoint"
+        android:layout_width="5dip"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:src="@color/imrecorder_timeline_point" />
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="8dip"
+        android:background="@drawable/aliwx_reply_bar_face_bg">
+    </ImageView>
+</LinearLayout>

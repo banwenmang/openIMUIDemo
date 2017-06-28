@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="#000" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/taorecorder_recorder_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/taorecorder_reocordtitle"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/aliwx_sv_wx_shiny_nor" />
+
+            <ImageView
+                android:id="@+id/iv_camerarotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="7dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="12dp"
+                android:paddingTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/aliwx_sv_wx_camera_nor" />
+
+
+        </RelativeLayout>
+
+        <com.taobao.av.ui.view.SquareFrameLayout
+            android:id="@+id/camera_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <SurfaceView
+                android:id="@+id/camera_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/iv_notice_recordlimit"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/taorecorder_nitification_recordlimit"
+                android:visibility="invisible"
+                />
+            <!--<TextView-->
+                <!--android:id="@+id/iv_notice_recordlimit"-->
+                <!--android:layout_width="88dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:text="至少录到这里哦"-->
+                <!--android:visibility="invisible" />-->
+
+        </com.taobao.av.ui.view.SquareFrameLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            layout="@layout/aliwx_sv_recorder_timeline" />
+
+        <RelativeLayout
+            android:id="@+id/rl_recorder_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000" >
+
+            <CheckBox
+                android:id="@+id/btn_delete_last_clip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:text="回删"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:button="@null"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_Recorderbg"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/aliwx_sv_recorder_ovalbg_stroke"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_Recorder"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/aliwx_sv_wx_video_record"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/iv_Recorder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="按住录"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:id="@+id/iv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="确定"
+                android:textSize="16sp"
+                android:button="@null"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_recordtime"
+                android:layout_width="52dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/taorecorder_recordtime"
+                android:background="@drawable/aliwx_sv_record_time_border"
+                android:textColor="#fff"
+                android:textSize="10dp" />
+                <!--android:background="@drawable/taorecorder_rectbg_time"-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/taorecorder_uik_circular_progress" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/taorecorder_uik_shape_waitview"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/taorecorder_uik_circularProgress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/taorecorder_uik_progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:textColor="#FF999999"
+        android:textSize="14dp" />
+
+</LinearLayout>

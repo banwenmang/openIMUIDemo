@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taobao.taorecorder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity
+            android:name="com.taobao.TaoRecordVideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.taobao.TaoPlayRecordVideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.taobao.URLDispatchActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.taobao.TaoVideoFilterActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.im.IMRecordVideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="svideo.m.taobao.com"
+                    android:path="/av/imrecorder.html"
+                    android:scheme="http" />
+                <data
+                    android:host="svideo.m.taobao.com"
+                    android:path="/av/imrecorder.html"
+                    android:scheme="https" />
+                <data
+                    android:host="svideo.m.taobao.com"
+                    android:path="/av/imstrecorder.html"
+                    android:scheme="http" />
+                <data
+                    android:host="svideo.m.taobao.com"
+                    android:path="/av/imstrecorder.html"
+                    android:scheme="https" />
+                <data android:path="/av/imrecorder.html" />
+                <data android:path="/av/imstrecorder.html" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.im.IMPlayRecordVideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="svideo.m.taobao.com"
+                    android:path="/av/imstpreview.html"
+                    android:scheme="http" />
+                <data
+                    android:host="svideo.m.taobao.com"
+                    android:path="/av/imstpreview.html"
+                    android:scheme="https" />
+                <data android:path="/av/imstpreview.html" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

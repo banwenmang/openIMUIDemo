@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/title"
+             style="@style/aliwx_common_title_style"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/title_back"
+        style="@style/common_title_left_btn_shadow2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="0dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ico_title_back_blue"
+        android:paddingLeft="5dp"
+        android:paddingRight="20dp"/>
+
+    <TextView
+        android:id="@+id/title_button"
+        style="@style/commont_title_right_btn_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:clickable="true"
+        android:text="@string/aliwx_more"
+        android:textColor="@color/dark_blue"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="18dip"
+        android:layout_height="18dip"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/aliwx_column_up_unit_margin"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/wq_loading_progress"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        style="@style/aliwx_common_title_text_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:includeFontPadding="false"
+        />
+
+    <ImageView
+        android:id="@+id/public_setting_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/pub_unread"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/aliwx_common_bg_color"/>
+
+</FrameLayout>
